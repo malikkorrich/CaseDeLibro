@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68D0C0AB-3987-487B-A3D2-DB71B2F3F23B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectoDIDos.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoDIDos</RootNamespace>
+    <AssemblyName>ProyectoDIDos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoDIDos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoDIDos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LibConexion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LibConexion\LibConexion\bin\Debug\LibConexion.dll</HintPath>
+    </Reference>
+    <Reference Include="libValidacionDatos">
+      <HintPath>libValidacionDatos\libValidacionDatos\bin\Debug\libValidacionDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1440.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1440.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1440.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1440.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1440.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cas_lib_dbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cas_lib_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepEmple.Designer.vb">
+      <DependentUpon>FormRepEmple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepEmple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepLibros.Designer.vb">
+      <DependentUpon>FormRepLibros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepLibros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepSocios.Designer.vb">
+      <DependentUpon>FormRepSocios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepSocios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionBusqueda.Designer.vb">
+      <DependentUpon>GestionBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionBusqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCobro.Designer.vb">
+      <DependentUpon>GestionCobro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCobro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionEmpleados.Designer.vb">
+      <DependentUpon>GestionEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionProductos.Designer.vb">
+      <DependentUpon>GestionProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionStock.Designer.vb">
+      <DependentUpon>GestionStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionUsuarios.Designer.vb">
+      <DependentUpon>GestionUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaInicio.Designer.vb">
+      <DependentUpon>PantallaInicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionClienteSocio.Designer.vb">
+      <DependentUpon>GestionClienteSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionClienteSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionLibro.Designer.vb">
+      <DependentUpon>GestionLibro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GestionLibro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PantallaPrincipal.Designer.vb">
+      <DependentUpon>PantallaPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPV.Designer.vb">
+      <DependentUpon>TPV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TPV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AsisRepEmple.rdlc" />
+    <EmbeddedResource Include="AsisRepLibros.rdlc" />
+    <EmbeddedResource Include="AsisRepSocios.rdlc" />
+    <EmbeddedResource Include="FormRepEmple.resx">
+      <DependentUpon>FormRepEmple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepLibros.resx">
+      <DependentUpon>FormRepLibros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepSocios.resx">
+      <DependentUpon>FormRepSocios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionBusqueda.resx">
+      <DependentUpon>GestionBusqueda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCobro.resx">
+      <DependentUpon>GestionCobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionEmpleados.resx">
+      <DependentUpon>GestionEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionProductos.resx">
+      <DependentUpon>GestionProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionStock.resx">
+      <DependentUpon>GestionStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionUsuarios.resx">
+      <DependentUpon>GestionUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaInicio.resx">
+      <DependentUpon>PantallaInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionClienteSocio.resx">
+      <DependentUpon>GestionClienteSocio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionLibro.resx">
+      <DependentUpon>GestionLibro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPrincipal.resx">
+      <DependentUpon>PantallaPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPV.resx">
+      <DependentUpon>TPV.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cas_lib_dbDataSet.xsc">
+      <DependentUpon>cas_lib_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cas_lib_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cas_lib_dbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cas_lib_dbDataSet.xss">
+      <DependentUpon>cas_lib_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
